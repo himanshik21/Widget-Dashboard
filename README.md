@@ -13,6 +13,8 @@ The Widget Dashboard is a responsive and dynamic web application designed to all
 
 5.Responsive Design: The application is fully responsive, ensuring that the interface works well on various screen sizes, including mobile devices.
 
+6.Local Storage Persistence: The application leverages local storage to ensure that added widgets are not lost when the page is refreshed, providing a seamless user experience.
+
 ## Table of Contents
 
 - [Installation](#installation)

@@ -2,6 +2,8 @@
 
 The Widget Dashboard is a responsive and dynamic web application designed to allow users to manage and organize widgets within different categories. The project is built using modern web development technologies like React, Redux, and Tailwind CSS, which together provide a smooth and efficient user experience.
 
+#### Live Project : [Link](https://widget-dashboard-three.vercel.app/)
+
 ## Key Features:
 1.Add Widgets: Users can add new widgets to specific categories using an intuitive modal interface. Each widget can have a unique name and content, and is stored under a selected category.
 

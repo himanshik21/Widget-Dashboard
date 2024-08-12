@@ -57,6 +57,11 @@ const rootReducer = (state = initialState, action) => {
                 ...state,
                 searchTerm: action.payload
             };
+        case "SET_CATEGORIES":
+            return {
+                ...state,
+                categories: action.payload,
+            };
         default:
             return state;
     }

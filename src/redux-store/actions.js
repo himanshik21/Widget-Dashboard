@@ -17,3 +17,7 @@ export const searchWidgets = (searchTerm) => ({
     payload: searchTerm
 });
 
+export const setCategories = (categories) => ({
+    type: "SET_CATEGORIES",
+    payload: categories,
+});

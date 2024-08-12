@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addWidget, removeWidget, searchWidgets } from "./redux-store/actions";
+import { addWidget, removeWidget, searchWidgets, setCategories } from "./redux-store/actions";
 import "./App.css";
 
 const App = () => {
@@ -50,6 +50,17 @@ const App = () => {
     setNewWidget({ ...newWidget, categoryId });
     setIsModalOpen(true);
   };
+
+  useEffect(() => {
+    const savedCategories = localStorage.getItem("categories");
+    if (savedCategories) {
+      dispatch(setCategories(JSON.parse(savedCategories)));
+    }
+  }, [dispatch]);
+
+   useEffect(() => {
+     localStorage.setItem("categories", JSON.stringify(categories));
+   }, [categories]);
 
   return (
     <div className="bg-gray-100 min-h-screen p-8">
